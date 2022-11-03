@@ -15,7 +15,7 @@ const Commen = () => {
     }
     const result=useSelector((state)=>state.productData)
     const results = result?.photo?.results
-    // console.log('djkfkf',results)
+    console.log('djkfkf',results)
     let dispatch=useDispatch()
     useEffect(()=>{
   dispatch({type:types.PRODUCT_START,query})
@@ -37,7 +37,7 @@ const Commen = () => {
   </button>
 </form>
       <div className="row">
-         {
+         { !results?.length ? (<h1>Data Not Found...!</h1>) :  
           results?.map((item,i)=>{
             return(
             //   <img src={item.urls.small
