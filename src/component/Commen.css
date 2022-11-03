@@ -1,4 +1,8 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     font-family: Arial;
     background: #fff1d8;
@@ -50,8 +54,12 @@ h1{
     text-align: center;
     padding-top: 15%;
 }
-
-
+ .row *{
+  padding: 1px;
+}
+.example{
+padding-bottom: 30px;
+}
 
 
 
